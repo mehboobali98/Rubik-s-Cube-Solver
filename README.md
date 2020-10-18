@@ -1,4 +1,4 @@
-# Rubik-s-Cube-Solver
+# Rubiks-Cube-Solver
 
 Solving the Rubik's Cube using three different search strategies:
 
