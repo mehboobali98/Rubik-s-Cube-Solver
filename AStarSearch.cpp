@@ -91,7 +91,6 @@ public:
         depth = node.depth;
         fn = node.fn;
         strcpy(moves, node.moves);
-        //cube = node.cube;
         for (int i = 0; i < 54; i++)
         {
             array[i] = node.array[i];
@@ -197,9 +196,6 @@ int main()
     //creating initial cubes
     createInitialCube(cube, array, rows, cols, sides);
     createInitialCube(goalCube, array1, rows, cols, sides);
-
-    //printCube(cube, rows, cols, sides);
-    //printCube(goalCube,rows,cols,sides);
 
     rightClockWise(cube,cols,sides);
     frontClockWise(cube, cols, sides);
@@ -575,9 +571,6 @@ void AStarSearch(int ***cube, int ***GoalCube, int rows, int cols, int sides, in
             open.push(*c);
         }
         counter++;
-        //   cout << counter << endl;
-        //   cout << "Open size: " << open.size() << endl;
-        //   cout << "Closed size: " << closed.size() << endl;
     }
 
     //deallocating memory
@@ -604,7 +597,6 @@ bool checkNodeExistsInStack(stack<Cube> &closed,priority_queue<Cube> &open, Cube
             // and put it into the open priority queue
             closed.pop();
             open.push(c);
-            // cout<<"Replaced in stack"<<endl;
             return true;
         }
         else
@@ -638,7 +630,6 @@ bool checkNodeExistsInQueue(priority_queue<Cube> &open, Cube c)
 
             open.pop();
             open.push(c);
-            //cout<<"Replaced in Queue"<<endl;
             return true;
         }
         else
@@ -1081,7 +1072,6 @@ void showStack(stack <Cube> closed)
     {
         n = closed.top();
         n.print();
-        //cout << n.fn;
         cout << endl;
         closed.pop();
     }
