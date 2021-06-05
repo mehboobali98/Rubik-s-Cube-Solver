@@ -11,6 +11,8 @@ The searches were compared in terms of:
 - Number of nodes expanded
 - Optimality
 
+# Directory Structure
+
 <pre>
 📦Rubiks-Cube-Solver
  ┣ 📂Documents
