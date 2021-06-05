@@ -1,6 +1,6 @@
-# Rubiks-Cube-Solver
+# Rubik's-Cube-Solver
 
-Solving the Rubik's Cube using three different search strategies:
+Solving the 6x6 Rubik's Cube using three different Artificial Intelligence (AI) search strategies:
 
 * Iterative Deepening Search
 * A* Search
